@@ -18,7 +18,12 @@ namespace QuickBook.Dominio.Entidades
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            LimparMensagensValidacao();
+            if (string.IsNullOrEmpty(Nome))
+                AdicionarMensagem("Não fooi informado nome do usuario");
+
+            if (string.IsNullOrEmpty(Email))
+                AdicionarMensagem("Não foi informado o email do usuario");
         }
     }
 }

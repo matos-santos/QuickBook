@@ -14,7 +14,9 @@ namespace QuickBook.Dominio.Entidades
 
         public override void Validate()
         {
-            throw new NotImplementedException();
+            LimparMensagensValidacao();
+            if (Quantidade == 0)
+                AdicionarMensagem("Não foi informada a quantidade do produto");
         }
     }
 }
