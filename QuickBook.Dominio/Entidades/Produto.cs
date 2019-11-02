@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuickBook.Dominio.Entidades
 {
-    public class Produto
+    public class Produto : Entidade
     {
         public int Id { get; set; }
 
@@ -14,5 +14,9 @@ namespace QuickBook.Dominio.Entidades
 
         public decimal Preco { get; set; }
 
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

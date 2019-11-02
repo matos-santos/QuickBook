@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuickBook.Dominio.Entidades
 {
-    public class ItemPedido
+    public class ItemPedido : Entidade
     {
         public int Id { get; set; }
 
@@ -12,5 +12,9 @@ namespace QuickBook.Dominio.Entidades
 
         public int Quantidade { get; set; }
 
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
