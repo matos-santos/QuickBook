@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "MysqlConnection": "server=localhost;uid=root;pwd=satom25SATOM21;database=QuickBookDB",
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
